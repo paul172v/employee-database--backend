@@ -4,7 +4,8 @@
   "description": "Attempting to recreate Bridge of Orchy employee app",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
   },
   "author": "Paul Harris",
   "license": "ISC",
