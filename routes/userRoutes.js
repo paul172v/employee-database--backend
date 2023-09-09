@@ -6,9 +6,11 @@ const authController = require("../controllers/authController");
 
 const adminController = require("../dev-docs/defaultEmployees");
 
-router
-  .route("/")
-  .get(authController.protectAndRestrictTo("user"), userController.getAll);
+// router
+//   .route("/")
+//   .get(authController.protectAndRestrictTo("user"), userController.getAll);
+
+router.route("/").get(userController.getAll);
 
 router.route("/get-birthdays").get(userController.getBirthdays);
 
